@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: var(--bg);
+}
+
+.before {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.container {
+    display: flex;
+}
+
+/* Title + description */
+
+.page-head {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+
+}
+
+.page-head h3 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--text-primary);
+    padding-bottom: 5%;
+    /* font-weight: <numeric>;  */
+}
+
+.page-head p {
+    text-align: left;
+    width: 80%;
+
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+/* desktop Title + description */
+
+@media screen and (min-width: 1600px) {
+    .page-head {
+        background-color: var(--primary);
+        color: white;
+        justify-content: left;
+        align-items: flex-start;
+        padding-left: 10%;
+    }
+
+    .page-head h3 {
+        font-size: 48px;
+        color: white;
+        padding-bottom: 1%;
+    }
+
+    .page-head p {
+        font-size: 25px;
+        color: white;
+        width:40%;
+        padding-bottom: 5%;
+        line-height: 40px;
+    }
+}
+
+/* Filters + Sort */
+
+.settings {
+    display: flex;
+    margin-top: 10%;
+}
+
+/* Filters */
+
+.filters {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10%;
+}
+
+.filters h4 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.filters a {
+    margin-top: 10px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Sort Box */
+
+.sort {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-box {
+    justify-content: left;
+    color: var(--text-secondary);
+    padding: 10px;
+    border: var(--primary) solid 1px;
+}
+
+.select-box span {
+    color: var(--text-primary);
+}
+
+.sort p {
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 10%;
+    font-size: 12px;
+}
+
+.select-box {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.select-box select {
+    font-weight: bold;
+    border: none;
+    justify-content: center;
+    background-color: var(--bg);
+}
+
+@media screen and (min-width: 1600px) {
+    .settings {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 0;
+        height: 200px;
+    }
+
+    .filters {
+        margin-top: -7%;
+    }
+
+    .sort {
+        margin-right: 10%;
+    }
+}
+
+/* Categories */
+
+.categories h2 {
+    margin-left: 10%;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.categories .checkbox {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 10%;
+    gap: 10px;
+}
+
+.categories .checkbox .item {
+    display: flex;
+    gap: 2px;
+}
+
+.categories .checkbox .item input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.categories .checkbox .item .checkmark {
+    height: 19px;
+    width: 19px;
+    border: var(--primary) solid 1px;
+}
+
+.item input:checked ~ .checkmark::before {
+    position: relative;
+    top: -6px;
+    left: -1px;
+    justify-content: center;
+    font-size: 24px;
+    content: "✓";
+    z-index: -1;
+}
+
+.checkbox .item input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox .item .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Colors */
+
+.color-page {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.color-page h2 {
+    font-size: 14px;
+}
+
+.colors {
+    display: flex;
+    gap: 8px;
+}
+
+.color {
+    width: 25px;
+    height: 25px;
+    border: black solid 1px;
+    border-radius: 10000px;
+}
+
+.colors .brown {
+    background-color: #DF9167;
+}
+
+.colors .purple {
+    background-color: #7B61FF;
+}
+
+.colors .green {
+    background-color: #219653;
+}
+
+.colors .blue {
+    background-color: #2F80ED;
+}
+
+.colors .red {
+    background-color: #EB5757;
+}
+
+.colors .cyan {
+    background-color: #56CCF2;
+}
+
+.colors .black {
+    background-color: #4F4F4F;
+}
+
+.colors .violet {
+    background-color: #BB6BD9;
+}
+
+.colors .white {
+    background-color: #F2F2F2;
+}
+
+/* products list */
+
+.products {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 8%;
+}
+
+.img {
+    display: block;
+    background-color: var(--secondary);
+    width: 300px;
+    height: 260px;
+    margin-bottom: 5%;
+}
+
+.image {
+    height: 260px;
+    width: 300px;
+    object-fit: cover;
+    background-color: white;
+}
+
+.text {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.text h2 {
+    flex-grow: 5;
+    font-size: 16px;
+}
+
+.size {
+    flex-grow: 5;
+    font-size: 16px;
+    text-align: right;
+}
+
+.price {
+    flex-basis: 100%;
+}
+
+.product:last-child {
+    padding-bottom: 10%;
+}
+
+:root {
+    --primary: #0D0D0D;
+    --secondary: #979797;
+    --bg: #EFF2F6;
+    --text-primary: black;
+    --text-secondary: #979797;
+}
