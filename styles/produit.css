@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.prix{
+    color: grey;
+    margin: 1%;
+    font-size: 150%;
+}
+
+.section{
+    display: flex;
+    margin-left:20%;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    display: block;
+    background-color: var(--secondary);
+    width: 90%;
+    height: 90%;
+    margin-top: 8%;
+}
+
+.petittitre{
+    font-size: 300%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1%;
+}
+
+.petitpara{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    text-align: justify;
+    padding: 1%;
+    width: 30%;
+}
+
+.favoritestyled{
+    background-color: black;
+    color: white;
+    padding: 1%;
+    width: 15%;
+}
+
+.favoritestyled2{
+    background-color: blue;
+    color: white;
+    padding: 1%;
+    width: 15%;
+}
+
+.deroulante{
+    background-color: white;
+    padding: 1%;
+    width: 15%;
+}
+
+.choixnum{
+    padding:1%;
+    width: 13%;
+}
+
+.textepreci{
+    color: grey;
+}
+
+.fleche{
+    position: absolute;
+    margin-top: -14%;
+    margin-left: 23% ;
+    width: 2%;
+    height: 4%;
+}
