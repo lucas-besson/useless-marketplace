@@ -80,3 +80,21 @@ a{
 .content-order-information{
     color: #909090;
 }
+
+.button-summary {
+    background-color: #0D0D0D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.4s ease-in-out;
+    width: 87%;
+
+}
+.button-summary:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
