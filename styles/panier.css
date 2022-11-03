@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap');
+
+body{
+    background-color: #F0F2F6;
+}
+
+.article-pannier{
+    width: 700px;
+}
+
+.pannier{
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3%;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.title-pannier{
+    margin-bottom: 4%;
+}
+
+img{
+    width : 200px;
+    height: 200px;
+
+}
+
+.article{
+    display: flex;
+    width: 150%;
+    margin-top: 2%;
+}
+
+.content-text{
+    padding-left: 2%;
+    width: 45%;
+}
+
+
+.order-summary{
+    margin-left: 15%;
+    margin-top: 4%;
+    width: 500px;
+    height: 270px;
+}
+
+.champs-entrer{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.button{
+    text-align: right;
+}
+
+a{
+    color: #0D0D0D;
+}
+
+
+.order-information{
+    margin-top: 15%;
+}
+
+.icone{
+    text-align: right;
+    margin-top: -7%;
+}
+
+.value-right{
+    text-align: right;
+    margin-top: -7%;
+}
+.title-order-information{
+    color: #0D0D0D;
+}
+
+.content-order-information{
+    color: #909090;
+}
