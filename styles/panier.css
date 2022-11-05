@@ -73,8 +73,6 @@ a{
 }
 
 
-
-
 .title-order-information{
     color: #0D0D0D;
 }
@@ -95,8 +93,8 @@ a{
     transition: 0.4s ease-in-out;
     width: 100%;
     margin-top: 2%;
-
 }
+
 .button-summary:hover {
     transform: scale(1.05, 1.05);
     cursor: pointer;
@@ -111,11 +109,13 @@ a{
 }
 
 
+
+
+
 @media all and (orientation : portrait){
     .container{
         flex-direction: column;
     }
-
 
     .pannier{
         order: 1;
