@@ -136,6 +136,18 @@ a{
         width: 100%;
     }
 
+    img{
+        width : 150px;
+        height: 150px;
+
+    }
+    .content-text{
+        font-size: 12px;
+    }
+
+    .button{
+        font-size: 12px;
+    }
 }
 
 
