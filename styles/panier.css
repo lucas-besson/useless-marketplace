@@ -4,12 +4,14 @@ body{
     background-color: #F0F2F6;
 }
 
-.article-pannier{
-    width: 700px;
-}
-
 .pannier{
+    order: 1;
+    width: 50%;
+    margin-right: 10%;
+}
+.container{
     display: flex;
+    flex-wrap: wrap;
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 3%;
@@ -28,21 +30,25 @@ img{
 
 .article{
     display: flex;
-    width: 150%;
+    width: 100%;
     margin-top: 2%;
 }
 
 .content-text{
     padding-left: 2%;
-    width: 45%;
+    width: 100%;
 }
 
-
-.order-summary{
-    margin-left: 15%;
+.test{
+    order: 1;
+    width: 40%;
     margin-top: 4%;
-    width: 500px;
-    height: 270px;
+}
+.order-summary{
+    order: 2;
+    margin-top: 4%;
+    width: 40%;
+
 }
 
 .champs-entrer{
@@ -52,7 +58,7 @@ img{
     box-sizing: border-box;
 }
 .button{
-    text-align: right;
+    font-size: 17px;
 }
 
 a{
@@ -61,18 +67,14 @@ a{
 
 
 .order-information{
-    margin-top: 15%;
+    width: 50%;
+    order: 3;
+
 }
 
-.icone{
-    text-align: right;
-    margin-top: -7%;
-}
 
-.value-right{
-    text-align: right;
-    margin-top: -7%;
-}
+
+
 .title-order-information{
     color: #0D0D0D;
 }
@@ -85,16 +87,57 @@ a{
     background-color: #0D0D0D;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 3% 0%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     transition: 0.4s ease-in-out;
-    width: 87%;
+    width: 100%;
+    margin-top: 2%;
 
 }
 .button-summary:hover {
     transform: scale(1.05, 1.05);
     cursor: pointer;
 }
+
+.right{
+    float:right;
+}
+
+.left{
+    float:left;
+}
+
+
+@media all and (orientation : portrait){
+    .container{
+        flex-direction: column;
+    }
+
+
+    .pannier{
+        order: 1;
+        width: 100%;
+    }
+    .content-text{
+        margin-top: -2%;
+        width: 100%;
+    }
+    .order-summary{
+        order: 2;
+        width: 100%;
+        height: 100%;
+        margin-left: 0%;
+    }
+    .order-information{
+        order: 3;
+        width: 100%;
+    }
+
+}
+
+
+
+

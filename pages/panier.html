@@ -9,8 +9,8 @@
 </head>
 <body>
 
-    <div class="pannier">
-        <div class="article-pannier">
+    <div class="container">
+        <div class="pannier">
             <div class="title-pannier">
                 <h1>Your cart</h1>
                 <p>Not ready to checkout? Continue Shopping</p>
@@ -23,14 +23,10 @@
                     <h2>Men's winter jacket</h2>
                     <p>Size: L</p>
                     <p>Quantity:1</p>
-                    <h2>$99</h2>
-                    <div class="button">
-                        <a href="#">Remove</a>
-                    </div>
+                    <h2><span class="right"><a class="button" href="#">Remove</a></span><span class="left">$99</span></h2><br>
                 </div>
             </div>
             <hr>
-
             <div class="article">
                 <div class="content-img">
                     <img src="../assets/imgtestpannier.jpeg" alt="image_test" class="image-article1">
@@ -39,40 +35,33 @@
                     <h2>Men's winter jacket</h2>
                     <p>Size: L</p>
                     <p>Quantity:1</p>
-                    <h2>$99</h2>
-                    <div class="button">
-                        <a href="#">Remove</a>
-                    </div>
-                </div>
-            </div>
-            <div class="order-information">
-                <div class="content-order-information">
-                    <h1> <span class="title-order-information">Order Infomation</span></h1>
-                    <hr>
-                    <h4>Return Policy</h4>
-                    <h1 class="icone"> - </h1>
-                    <p>This is our example return policy which is everything you need to know <br> about our returns.</p>
-                    <hr>
-                    <h4>Shipping Options</h4>
-                    <h1 class="icone"> + </h1>
-                    <hr>
-                    <h4>Shipping Options</h4>
-                    <h1 class="icone"> + </h1>
-                    <hr>
+                    <h2><span class="right"><a class="button" href="#">Remove</a></span><span class="left">$99</span></h2><br>
                 </div>
             </div>
         </div>
 
+        <div class="order-information">
+            <div class="content-order-information">
+                <h1> <span class="title-order-information">Order Infomation</span></h1>
+                <hr>
+                <h4><span class="right">—</span><span class="left">Return Policy</span></h4><br>
+                <p>This is our example return policy which is everything you need to know about our returns.</p>
+                <hr>
+                <h4><span class="right">+</span><span class="left">Shipping Options</span></h4><br>
+                <hr>
+                <h4><span class="right">+</span><span class="left">Shipping Options</span></h4><br>
+                <hr>
+            </div>
+        </div>
+
+
         <div class="order-summary">
             <h1>Order Summary</h1>
             <input class="champs-entrer" type="text" id="name" name="name" required minlength="4" maxlength="8" size="50" placeholder="Enter coupon code here">
-            <p> Subtotal</p>
-            <p class="value-right">$200</p>
-            <p> Shipping</p>
-            <p class="value-right">Calculated at the next step</p>
+            <p><span class="right">$200</span><span class="left">Subtotal</span></p><br>
+            <p><span class="right">Calculated at the next step</span><span class="left">Shipping</span></p><br>
             <hr>
-            <p>Total</p>
-            <p class="value-right">$200</p>
+            <p><span class="right">$200</span><span class="left">Total</span></p><br>
             <a class="button-summary" href="#">Continue to checkout</a>
         </div>
     </div>
