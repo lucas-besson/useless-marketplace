@@ -16,12 +16,18 @@ body{
     align-items: center;
 }
 
+.description{
+    margin-top: -7%;
+    margin-left: 5%;
+}
+
 .img {
     display: block;
     background-color: var(--secondary);
-    width: 90%;
-    height: 90%;
-    margin-top: 8%;
+    width: 120%;
+    height: 120%;
+    margin-top: 6%;
+    margin-left: -25%;
 }
 
 .petittitre{
@@ -58,11 +64,13 @@ body{
     background-color: white;
     padding: 1%;
     width: 15%;
+    border: 1px solid black;
 }
 
 .choixnum{
     padding:1%;
     width: 13%;
+    border: 1px solid black;
 }
 
 .textepreci{
@@ -71,7 +79,7 @@ body{
 
 .fleche{
     position: absolute;
-    margin-top: -14%;
+    margin-top: -17%;
     margin-left: 23% ;
     width: 2%;
     height: 4%;
@@ -103,6 +111,8 @@ body{
         background-color: var(--secondary);
         width: 100%;
         height: 70%;
+        margin-left: 0%;
+
     }
 
     .petittitre{
@@ -149,14 +159,14 @@ body{
         background-color: black;
         color: white;
         padding: 1.5%;
-        width: 60%;
+        width: 62%;
     }
 
     .favoritestyled2{
         background-color: blue;
         color: white;
         padding: 1.5%;
-        width: 30%;
+        width: 35%;
         margin-right: 2%;
 
     }
