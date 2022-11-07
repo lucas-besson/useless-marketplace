@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap');
+
+.contenu-footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: 'Public Sans', sans-serif;
+}
+
+
+.contenu-footer a{
+    text-decoration: none;
+    color: #909090;
+}
+
+.footer-right{
+    display: flex;
+    width: 100%;
+
+}
+
+.bloc{
+    width: 100%;
+}
+
+.footer-left{
+    width: 50%;
+    justify-content: center;
+}
+
+.footer-right{
+    width: 50%;
+}
+
+.news-letter{
+    width: 80%;
+}
+
+
+
+@media all and (orientation : portrait){
+    .contenu-footer{
+        flex-direction: column;
+    }
+
+    .footer-right{
+        width: 100%
+
+    }
+    .footer-left{
+        width: 100%;
+    }
+
+    .news-letter{
+        width: 100%;
+    }
+    .bloc{
+        width: 100%;
+    }
+}
