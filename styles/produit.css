@@ -78,7 +78,12 @@ body{
 }
 
 
-@media all and (orientation : portrait){
+@media all and (orientation : portrait){ 
+
+    .description{
+        display: flex;
+        flex-flow: column nowrap;
+    }
 
     .fleche{
         position: absolute;
@@ -101,6 +106,7 @@ body{
     }
 
     .petittitre{
+        order: -3;
         font-size: 300%;
         display: flex;
         flex-flow: column nowrap;
@@ -108,15 +114,20 @@ body{
     }
 
     .petitpara{
+        order: -2;
         display: flex;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 120%;
         text-align: justify;
-        padding: 1%;
-        width: 80%;
+        width: 95%;
+    }
+
+    .bouttons{
+        display: flex;
     }
 
     .prix{
+        order: -1;
         color: grey;
         margin: 1%;
         font-size: 150%;
@@ -138,15 +149,16 @@ body{
         background-color: black;
         color: white;
         padding: 1.5%;
-        width: 45%;
-        margin-right: 2 %;
+        width: 60%;
     }
 
     .favoritestyled2{
         background-color: blue;
         color: white;
         padding: 1.5%;
-        width: 45%;
+        width: 30%;
+        margin-right: 2%;
+
     }
 
 }
