@@ -156,6 +156,7 @@ body{
     }
 
     .favoritestyled{
+        order: 3;
         background-color: black;
         color: white;
         padding: 1.5%;
@@ -163,11 +164,12 @@ body{
     }
 
     .favoritestyled2{
+        order: 4;
         background-color: blue;
         color: white;
         padding: 1.5%;
         width: 35%;
-        margin-right: 2%;
+        margin-left: 2%;
 
     }
 
