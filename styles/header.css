@@ -260,3 +260,12 @@ a .burger .lines .line {
         width: 100%;
     }
 }
+
+:root {
+    --primary: #0D0D0D;
+    --secondary: #979797;
+    --bg: #EFF2F6;
+    --text-primary: black;
+    --text-secondary: #979797;
+    --border: #1C275A;
+}
