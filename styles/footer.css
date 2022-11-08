@@ -8,12 +8,13 @@
 
 .sub-button{
     font-size: 15px;
-    margin-left: 2%;
     border: none;
+    margin-left: 8%;
     background-color: white;
 }
 
 .champs-entrer{
+    width: 65%;
     padding: 2%;
     border: none;
 }
