@@ -6,6 +6,7 @@
     display: flex;
     flex-flow: column wrap;
     background-color: var(--primary);
+    font-family: "Public Sans";
 } 
 
 a .burger {
