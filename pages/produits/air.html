@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/produit.css">
     <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/produit.css">
     <title>Useless Marketplace</title>
 </head>
 <body>
-    <div class="navbar">
+     <!-- Nav-Bar -->
+     <div class="navbar">
         <a href="javascript:void(0);" onclick="burgerMenu()">
             <div class="burger">
                 <div class="lines">
@@ -67,7 +69,6 @@
                 <a href="#"><h2>Login</h2></a>
             </div>
         </div>
-        <hr class="underline">
     </div>
     <script>
         function burgerMenu() {
@@ -79,6 +80,7 @@
             }
         } 
     </script>
+    <!-- Fin NavBar -->
 
 
 
@@ -107,8 +109,8 @@
             </div>
             <p class = "textepreci"> this product is heavy</p>
             <div class="bouttons">
+            <button onclick="self.location.href='../panier.html'" class="favoritestyled" type="button">Add  -999$ </button>
             <button class="favoritestyled2" type="button">Buy now </button>
-            <button class="favoritestyled" type="button">Add  -999$ </button>
         </div>
         </div>
     </section>
