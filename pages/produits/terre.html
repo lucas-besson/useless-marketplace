@@ -4,18 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/produit.css">
     <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/produit.css">
     <title>Useless Marketplace</title>
 </head>
 <body>
+     <!-- Nav-Bar -->
+     <div class="navbar">
+        <a href="javascript:void(0);" onclick="burgerMenu()">
+            <div class="burger">
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </a>
+        <div id="nav">
+            <div class="links">
+                <a href="../index.html"><h1>Useless Marketplace</h1></a>
+                <a href="catalogue.html"><p>Shop</p></a>
+                <a href="#"><p>Stories</p></a>
+                <a href="#"><p>About</p></a>
+            </div>
+            <div class="search">
+                <a href="#">
+                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="25" height="25" viewBox="0 0 500.00001 500.00001" id="svg4162" version="1.1" inkscape:version="0.92.3 (2405546, 2018-03-11)" sodipodi:docname="Search_Icon.svg">
+                        <defs id="defs4164"/>
+                        <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.954" inkscape:cx="250" inkscape:cy="250" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" units="px" inkscape:window-width="1366" inkscape:window-height="706" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1"/>
+                        <metadata id="metadata4167">
+                            <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                    <dc:format>image/svg+xml</dc:format>
+                                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                    <dc:title/>
+                                </cc:Work>
+                            </rdf:RDF>
+                        </metadata>
+                        <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-552.36216)">
+                            <g id="g1400" transform="translate(-4.3609793,-7.6704785)">
+                            <path inkscape:connector-curvature="0" id="path4714" d="M 232.83952,614.96702 A 154.04816,154.04794 0 0 0 78.79153,769.01382 154.04816,154.04794 0 0 0 232.83952,923.06184 154.04816,154.04794 0 0 0 386.88751,769.01382 154.04816,154.04794 0 0 0 232.83952,614.96702 Z m 0,26.77613 A 129.95832,127.2707 0 0 1 362.79832,769.01382 129.95832,127.2707 0 0 1 232.83952,896.28449 129.95832,127.2707 0 0 1 102.88194,769.01382 129.95832,127.2707 0 0 1 232.83952,641.74315 Z" style="opacity:1;fill:#EFF2F6;fill-opacity:1;stroke:none;stroke-opacity:1"/>
+                            <rect ry="18.08342" rx="33.249443" transform="matrix(0.65316768,0.7572133,-0.60689051,0.79478545,0,0)" y="319.55432" x="794.8775" height="36.16684" width="173.02675" id="rect4721" style="opacity:1;fill:#EFF2F6;fill-opacity:1;stroke:none;stroke-opacity:1"/>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <input class="search-bar" type="text" placeholder="Search"></input>
+            </div>
+            <div class="account">
+                <a href="#">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill:#ffffff" width="25" height="25" x="0px" y="0px" viewBox="0 0 483.1 483.1" xml:space="preserve">
+                        <g>
+                            <path style="fill:#ffffff" d="M434.55,418.7l-27.8-313.3c-0.5-6.2-5.7-10.9-12-10.9h-58.6c-0.1-52.1-42.5-94.5-94.6-94.5s-94.5,42.4-94.6,94.5h-58.6
+                                c-6.2,0-11.4,4.7-12,10.9l-27.8,313.3c0,0.4,0,0.7,0,1.1c0,34.9,32.1,63.3,71.5,63.3h243c39.4,0,71.5-28.4,71.5-63.3
+                                C434.55,419.4,434.55,419.1,434.55,418.7z M241.55,24c38.9,0,70.5,31.6,70.6,70.5h-141.2C171.05,55.6,202.65,24,241.55,24z
+                                M363.05,459h-243c-26,0-47.2-17.3-47.5-38.8l26.8-301.7h47.6v42.1c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h141.2v42.1
+                                c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h47.6l26.8,301.8C410.25,441.7,389.05,459,363.05,459z"/>
+                        </g>
+                    </svg>
+                </a>
+                <h2>2</h2>
+                <a href="#"><h2>Login</h2></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function burgerMenu() {
+            var x = document.getElementById("nav");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        } 
+    </script>
+    <!-- Fin NavBar -->
+
+
+
     <section class = "section1">
         <div class="image">
             <img src="../../assets/dirtpantalon.jpg" alt="image de l'artcle" class="img">
             <img src="../../assets/fleche.png" alt="fleche pour carrousel" class="fleche">
         </div>
         <div class = "description">
-            <h3 class="petittitre">air product</h3>
+            <h3 class="petittitre">dirt product</h3>
             <div class="prix">
                 <h4 > 99$</h4>
             </div>
@@ -34,8 +109,8 @@
             </div>
             <p class = "textepreci"> this product is heavy</p>
             <div class="bouttons">
+            <button onclick="self.location.href='../panier.html'" class="favoritestyled" type="button">Add  -999$ </button>
             <button class="favoritestyled2" type="button">Buy now </button>
-            <button class="favoritestyled" type="button">Add  -999$ </button>
         </div>
         </div>
     </section>
@@ -84,5 +159,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
