@@ -1,6 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
+    background-color: #EFF2F6;
 }
 
 
@@ -59,23 +60,25 @@ h4{
     font-size: 20px;
     background-color: black;
     color: white;
-    padding: 1%;
+    padding: 2%;
     width: 27%;
+    border: none;
 }
 
 .favoritestyled2{
     font-size: 20px;
     background-color: blue;
     color: white;
-    padding: 1%;
+    padding: 2%;
     width: 22%;
     margin-left: 1.8%;
+    border: none;
 }
 
 .deroulante{
     font-size: 20px;
     background-color: white;
-    padding: 1%;
+    padding: 2%;
     width: 23%;
     border: 1px solid black;
     margin-left: 2%;
@@ -83,7 +86,7 @@ h4{
 
 .choixnum{
     font-size: 20px;
-    padding:1%;
+    padding:2%;
     width: 23%;
     border: 1px solid black;
 }
