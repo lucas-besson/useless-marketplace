@@ -7,13 +7,14 @@
     flex-flow: column wrap;
     background-color: var(--primary);
     font-family: "Public Sans";
+    padding-bottom: 6%;
 } 
 
 a .burger {
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-end;
-    padding-bottom: 80%;
+    /* padding-bottom: 80%; */
     margin-top: 5%;
     margin-right: 5%;
     margin-bottom: 3%;
@@ -145,9 +146,13 @@ a .burger .lines .line {
     color: var(--bg); 
     background-color: var(--bg); 
     width: 100%;
+    opacity: 0.0;
 }
 
 @media screen and (min-width: 1600px) {
+    .navbar {
+        padding-bottom: 0px;
+    }
     .burger {
         display: none;
     }
@@ -259,6 +264,7 @@ a .burger .lines .line {
         color: var(--bg); 
         background-color: var(--bg); 
         width: 100%;
+        opacity: 1.0;
     }
 }
 
